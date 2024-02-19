@@ -3,7 +3,6 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer, util
 import json
 import pickle
-import torch 
 
 app = Flask(__name__)
 
