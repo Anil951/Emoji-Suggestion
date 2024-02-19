@@ -57,7 +57,7 @@ def process_input():
 
         # Extract the first 3 emojis along with 'emojiNames' and 'name_score'
         emojis_with_details = final_df[['emojis', 'emojiNames', 'score']].head(3).to_dict(orient='records')
-        print(emojis_with_details)
+        # print(emojis_with_details)
         return jsonify({'emojis': emojis_with_details})
     
 
