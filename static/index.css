@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Exo', sans-serif;
+}
+
+input[type="text"]{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0.2px solid #000000;
+    width: 250px;
+    transition: all 0.3s;
+}
+
+
+input[type="text"]:focus, button:focus {
+    border-color: #2e2e2e;
+}
+
+.placeholder {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #524f4f;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+input[type="text"]:focus + .placeholder,
+input[type="text"]:not(:placeholder-shown) + .placeholder {
+    top: 5px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.placeholder1 {
+    left: 10px;
+    transform: translateY(-150%);
+    pointer-events: none;
+    color: #646161;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+input[type="text"]:focus + .placeholder1,
+input[type="text"]:not(:placeholder-shown) + .placeholder1 {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transform: translateY(-280%);
+}
+
+#addEmojiForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -37%);
+}
+#backbtn {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+#backbtn:hover {
+    background-color: #828282; /* Light green background color */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* White shadow effect */
+    color:white;
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+#submitEmojiBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#submitEmojiBtn:hover {
+    background-color: #5fec80; /* Light green background color */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* White shadow effect */
+    color:white;
+    transition: all 0.2s;
+    font-weight: bold;
+}
+#submitEmojiBtn:active{
+    background-color: #5fec80;
+}
+
+
+.input-container{
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: flex-start; /* Align items to the start of the container */
+    position: absolute;
+    margin-top: 20px;
+}
+
+.emojis-container {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    right: 5px;
+    top: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.emoji {
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.emoji:hover {
+    opacity: 1;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 2;
+    width: 200px;
+}
+
+.emoji:hover .tooltip {
+    display: block;
+}
+
+
+
+
+
+#addEmojiBtndiv {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    transform: translateY(-35px);
+
+}
+#addEmojiBtn {
+    font-size: 16px;
+    padding-left: 10px;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #007bff; /* Set the color to the hyperlink color */
+}
+#addEmojiBtn:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
