@@ -13,3 +13,6 @@ python-json-logger==2.0.7
 python-Levenshtein==0.21.1
 
 
+
+
+gunicorn==19.7.1
