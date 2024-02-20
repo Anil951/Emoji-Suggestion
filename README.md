@@ -26,5 +26,13 @@ We welcome contributions from the community to enhance the system's capabilities
 3. Run the application using `python app.py`.
 
 
+## Demo
+
+
+
+
+<video src='https://github.com/Anil951/Emoji-Suggestion/assets/115132631/938891a8-a261-4670-a283-985f0a8d19c1' width=180/>
+
+
 
 
